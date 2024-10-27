@@ -1,0 +1,359 @@
+/* start global */
+:root {
+  --main-color: #000000e6;
+  --second-color: #e65f78;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+}
+h1 {
+  font-size: 3.125rem !important;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.top-25 {
+  top: 25%;
+}
+.bg-light-dark {
+  background-color: #333333;
+}
+.w-45 {
+  width: 45%;
+}
+.text-second {
+  color: var(--second-color);
+}
+.bg-second
+{
+  background-color: var(--second-color);
+}
+/* end global */
+
+/* start Navbar */
+nav {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.bg-light {
+  background-color: #f8f9fa;
+}
+.navbar .nav-link {
+  transition: all 0.4s;
+}
+.navbar .nav-link:hover {
+  color: var(--second-color);
+}
+.navbar .nav-link.active {
+  color: var(--second-color) !important;
+  font-weight: 700;
+}
+.bg-light-gray {
+  background-color: #f1f1f1;
+}
+/* end Navbar */
+
+/* Start Header */
+.header-sec {
+  background-image: url(../images/header-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+header .layer {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.text-dark-white {
+  color: #ffffff80;
+}
+.btn-download:hover {
+  background-color: #fff !important;
+  color: #333;
+}
+.header-subtitle {
+  max-width: 500px;
+}
+header h1:after {
+  content: "|";
+  animation: typing 3s infinite;
+}
+
+.About-animation {
+  border: white 2px solid;
+  height: 70px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #333333;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  animation: scroll 0.3s infinite alternate ease-in-out;
+}
+.About-animation::after {
+  content: "";
+  width: 5px;
+  height: 10px;
+  background-color: #fff;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+@keyframes scroll {
+  from {
+    position: absolute;
+    top: 80%;
+  }
+  to {
+    position: absolute;
+    top: 85%;
+  }
+}
+@keyframes typing {
+  0% {
+    content: "D|";
+  }
+  2.1% {
+    content: "De|";
+  }
+  4.2% {
+    content: "Dev|";
+  }
+  6.3% {
+    content: "Deve|";
+  }
+  8.4% {
+    content: "Devel|";
+  }
+  10.5% {
+    content: "Develo|";
+  }
+  12.6% {
+    content: "Develop|";
+  }
+  14.7% {
+    content: "Developm|";
+  }
+  16.8% {
+    content: "Developme|";
+  }
+  18.9% {
+    content: "Developmen|";
+  }
+  21% {
+    content: "Development|";
+  }
+  23.1% {
+    content: "Developmen|";
+  }
+  25.2% {
+    content: "Developme|";
+  }
+  27.3% {
+    content: "Developm|";
+  }
+  29.4% {
+    content: "Develop|";
+  }
+  31.5% {
+    content: "Develo|";
+  }
+  33.6% {
+    content: "Devel|";
+  }
+  35.7% {
+    content: "Deve|";
+  }
+  37.8% {
+    content: "Dev|";
+  }
+  39.9% {
+    content: "De|";
+  }
+  42% {
+    content: "Des|";
+  }
+  44.1% {
+    content: "Desi|";
+  }
+  46.2% {
+    content: "Desig|";
+  }
+  48.3% {
+    content: "Design|";
+  }
+  50.4% {
+    content: "Designe|";
+  }
+  52.5% {
+    content: "Designe|";
+  }
+  54.6% {
+    content: "Design|";
+  }
+  56.7% {
+    content: "Desig|";
+  }
+  58.8% {
+    content: "Desi|";
+  }
+  60.9% {
+    content: "Des|";
+  }
+  63% {
+    content: "De|";
+  }
+  65.1% {
+    content: "Dev|";
+  }
+  67.2% {
+    content: "Deve|";
+  }
+  69.3% {
+    content: "Devel|";
+  }
+  71.4% {
+    content: "Develo|";
+  }
+  73.5% {
+    content: "Develop|";
+  }
+  75.6% {
+    content: "Develope|";
+  }
+  77.7% {
+    content: "Developer|";
+  }
+  79.8% {
+    content: "Develope|";
+  }
+  81.9% {
+    content: "Develop|";
+  }
+  84% {
+    content: "Develo|";
+  }
+  86.1% {
+    content: "Devel|";
+  }
+  88.2% {
+    content: "Deve|";
+  }
+  90.3% {
+    content: "Dev|";
+  }
+  92.4% {
+    content: "De|";
+  }
+  94.5% {
+    content: "D|";
+  }
+  96.6% {
+    content: "|";
+  }
+  98.7% {
+    content: "|";
+  }
+  100% {
+    content: "|";
+  }
+}
+/* End Header */
+/* Start About */
+.about .icon-item {
+  height: 40px;
+  width: 40px;
+  border: solid 2px #ccc;
+  border-radius: 50%;
+
+  transition: all 0.3s;
+}
+.about .icon-item:hover {
+  border: 2px solid var(--second-color);
+  color: var(--second-color);
+}
+.about .img-thumbnail {
+  border-radius: 0;
+}
+/* End About */
+
+/* Start Clients */
+.carousel-indicators [data-bs-target] {
+  background-color: var(--second-color);
+  height: 6px;
+  border-radius: 40% !important;
+}
+/* End Clients */
+
+/* Start Works */
+.works-item .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.works-item img {
+  transition: all 0.3s;
+}
+.works-item .layer-contnet {
+  transform: translateY(100%);
+  transition: all 0.3s;
+}
+.works-item:hover .layer {
+  opacity: 1;
+}
+.works-item:hover img {
+  transform: scale(1.5);
+}
+.works-item:hover .layer-contnet {
+  transform: translateY(0);
+}
+
+.our-works .nav-link.active {
+  background-color: var(--second-color) !important;
+  color: white !important;
+  border-radius: 25px;
+}
+.our-works .nav-link {
+  color: #444;
+}
+/* End Works */
+/* Start Blog */
+.readmore-btn {
+  background-color: transparent;
+  border: none;
+}
+/* End Blog */
+/*Start contact us */
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(230, 95, 120, 0.7);
+} 
+form .form-btn
+{
+  cursor: pointer;
+}
+/*End contact us */
